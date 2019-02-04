@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: rgb(185, 194, 192);
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    margin: 20px;
+  }
+
+  a:visited {
+      color:orange;
+    }
+
+   a:link {
+      text-decoration: none;
+    }
+
+  a:active {
+    color: orange;
+  }  
+
+#top-about-me {
+    margin: auto;
+    text-align: center;
+}
+
+#backyard {
+  width: 250px;
+  height: 275px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#border-box {
+  background-image: linear-gradient(to right, lightblue, lightgreen);
+  display: inline-block;
+}
+
+.left-column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Washington-state-map_h.svg/2000px-Washington-state-map_h.svg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: orange;
+}
+
+.right-column {
+    float: right;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px;
+    background-image: url(https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/4417/s300/cf-logo-shield.png);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: orange;
+}
+
+.center-column {
+    margin: 0 auto;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px;
+    background-image: url(https://www.goodfreephotos.com/albums/vector-images/evil-hooded-skull-vector-clipart.png);
+    background-size: cover;
+    color: orange;
+}
+
+.center-column:hover {
+    background-color: gray;
+}
+
+.right-column:hover {
+    background-color: gray;
+}
+
+.left-column:hover {
+    background-color: gray;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
