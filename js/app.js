@@ -66,24 +66,55 @@ function lab (){
       }
       responses.push(response);
       console.log(response);
-
+  
       // Check to see if the response is correct
       if (correctAnswers[turnIndex].includes(response)) {
         alert('Correct!');
         counter++;
         break;
+      } else if (response === '1') {
+        alert('Too low, ' + (tries[turnIndex] - tryIndex - 1) + ' left.');
+      } else if (response === '2') {
+        alert('Too low, ' + (tries[turnIndex] - tryIndex - 1) + ' left.');
+      } else if (response === '3') {
+        alert('Too low, ' + (tries[turnIndex] - tryIndex - 1) + ' left.');
+      } else if (response === '4') {
+        alert('Too low, ' + (tries[turnIndex] - tryIndex - 1) + ' left.');
+      } else if (response === '5') {
+        alert('Too low, ' + (tries[turnIndex] - tryIndex - 1) + ' left.');
+      } else if (response === '6') {
+        alert('Too low, ' + (tries[turnIndex] - tryIndex - 1) + ' left.');
+      } else if (response === '7') {
+        alert('Too low, ' + (tries[turnIndex] - tryIndex - 1) + ' left.');
+      } else if (response === '8') {
+        alert('Too low, ' + (tries[turnIndex] - tryIndex - 1) + ' left.');
+      } else if (response === '9') {
+        alert('Too low, ' + (tries[turnIndex] - tryIndex - 1) + ' left.');
+      } else if (response === '10') {
+        alert('Too low, ' + (tries[turnIndex] - tryIndex - 1) + ' left.');
+      } else if (response === '11') {
+        alert('Too low, ' + (tries[turnIndex] - tryIndex - 1) + ' left.');
+      } else if (response === '13') {
+        alert('Too high, ' + (tries[turnIndex] - tryIndex - 1) + ' left.');
+      } else if (response === '14') {
+        alert('Too high, ' + (tries[turnIndex] - tryIndex - 1) + ' left.');
+      } else if (response === '15') {
+        alert('Too high, ' + (tries[turnIndex] - tryIndex - 1) + ' left.');
       // If they're on their last try:
       } else if (tryIndex === tries[turnIndex] - 1) {
         alert('Incorrect.');
-      // If they have more tries left:
+
+        // If they're on their last try:
+      } else if (tryIndex === tries[turnIndex] - 1) {
+        alert('Incorrect.');
+        // If they have more tries left:
       } else {
         alert('Incorrect. You have ' + (tries[turnIndex] - tryIndex - 1) + ' left.');
       }
     }
   }
-
   alert(username + ', you got ' + counter + ' out of ' +
-    questions.length + ' correct.');
-}
+      questions.length + ' correct.');
 
+}
 lab ();
